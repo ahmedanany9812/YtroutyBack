@@ -2,7 +2,7 @@ const multer = require("multer");
 const upload = multer({
   storage: multer.diskStorage({}),
   limits: {
-    fileSize: 3000000,
+    fileSize: 5000000,
   },
 }).single("postmedia");
 const uploadMedia = (req, res, next) => {
